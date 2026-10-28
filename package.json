@@ -1,0 +1,9 @@
+{
+  "name": "nvpremierdetail",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premier Auto Detailing website (Reno / Tahoe)",
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}

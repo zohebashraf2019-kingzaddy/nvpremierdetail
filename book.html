@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book an Appointment | Premier Auto Detailing Reno</title>
+<meta name="description" content="Build your detail, see your starting price, then pick a time on our Square booking calendar. Mobile service across Reno, Sparks and Lake Tahoe, 8am to 7pm daily.">
+<meta name="theme-color" content="#071022">
+<meta property="og:title" content="Book an Appointment | Premier Auto Detailing Reno">
+<meta property="og:description" content="Build your detail, see your starting price, then pick a time on our Square booking calendar. Mobile service across Reno, Sparks and Lake Tahoe, 8am to 7pm daily.">
+<meta property="og:image" content="/assets/img/silverado-hood.webp">
+<link rel="icon" type="image/png" href="/assets/img/logo-256.png">
+<link rel="preload" href="assets/fonts/saira-xc-bold.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header site-header--solid">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Premier Auto Detailing home"><img src="assets/img/logo.png" alt="Premier Auto Detailing" width="222" height="184"></a>
+    <nav class="nav" aria-label="Main"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services & pricing</a></li>
+<li><a href="ceramic-coating.html">Ceramic coating</a></li>
+<li><a href="studio.html">3D Studio</a></li>
+<li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+    <div class="header-cta">
+      <a class="header-phone" href="tel:+17754208547">(775) 420-8547</a>
+      <a class="btn" href="book.html">Book now</a>
+    </div>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+<a class="drawer-link" href="index.html">Home</a>
+<a class="drawer-link" href="services.html">Services & pricing</a>
+<a class="drawer-link" href="ceramic-coating.html">Ceramic coating</a>
+<a class="drawer-link" href="studio.html">3D Studio</a>
+<a class="drawer-link" href="contact.html">Contact</a>
+<a class="btn" href="book.html">Book now</a>
+<a class="btn btn--ghost" href="tel:+17754208547">Call (775) 420-8547</a>
+<p class="drawer-meta">Mobile service across Reno, Sparks and Lake Tahoe. Open every day, 8am to 7pm.</p>
+</div>
+<main id="main" class="book-page">
+  <div class="wrap">
+    <header class="book-head">
+      <p class="crumbs"><a href="index.html">Home</a> / Book</p>
+      <h1>Book an appointment</h1>
+      <p class="lede">Build your detail and see your starting price. When you&rsquo;re ready, you&rsquo;ll choose a time and pay the booking fee on our secure Square calendar.</p>
+    </header>
+
+    <form class="book" id="book" novalidate>
+      <div class="book-steps">
+        <fieldset class="step">
+          <legend><span class="step-n">1</span>Your vehicle</legend>
+          <div class="pick-grid" data-sizes></div>
+          <div class="form-row form-row--3 step-extra">
+            <div class="field"><label for="year">Year <span class="opt">(optional)</span></label><input id="year" name="year" inputmode="numeric" maxlength="4" placeholder="2022"></div>
+            <div class="field"><label for="make">Make <span class="opt">(optional)</span></label><input id="make" name="make" placeholder="Chevrolet"></div>
+            <div class="field"><label for="model">Model <span class="opt">(optional)</span></label><input id="model" name="model" placeholder="Silverado"></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="step">
+          <legend><span class="step-n">2</span>Service</legend>
+          <div class="svc-pick" data-services></div>
+        </fieldset>
+
+        <fieldset class="step" data-options-step>
+          <legend><span class="step-n">3</span>Options</legend>
+          <div data-options></div>
+          <div class="field" style="margin-top:22px">
+            <span class="field-label">Anything extra we should know about? <span class="opt">(may change the price)</span></span>
+            <div class="chips" data-addons></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="step">
+          <legend><span class="step-n">4</span>Where we&rsquo;ll meet you</legend>
+          <div class="form-row form-row--2">
+            <div class="field"><label for="city">City</label>
+              <select id="city" name="city"><option>Reno</option><option>Sparks</option><option>Incline Village</option><option>Stateline</option><option>Tahoe City</option><option>Somewhere else nearby</option></select>
+            </div>
+            <div class="field"><label for="date">Preferred day <span class="opt">(optional)</span></label><input id="date" name="date" type="date"></div>
+          </div>
+          <p class="note">We need access to the vehicle and a spot to park our rig. No hose or outlet needed: we bring purified water and power.</p>
+        </fieldset>
+      </div>
+
+      <aside class="summary" id="summary" aria-live="polite">
+        <h2>Your estimate</h2>
+        <dl class="sum-list" data-summary></dl>
+        <div class="sum-total"><span>Starting at</span><strong data-total>$0</strong></div>
+        <p class="sum-note" data-total-note>Final price is confirmed after we see the vehicle.</p>
+        <label class="agree"><input type="checkbox" id="agree" required> <span>I&rsquo;ve read the <a href="#policy">cancellation policy</a>, including the non-refundable booking fee that goes toward my final price.</span></label>
+        <p class="agree-err" data-agree-err hidden>Check the box to continue to booking.</p>
+        <button class="btn btn--block" type="submit">Choose a time on Square</button>
+        <a class="btn btn--ghost btn--block" href="contact.html" data-quote-link>Send these details for a quote</a>
+        <p class="sum-note">Square opens in a new tab. You&rsquo;ll see live availability there.</p>
+      </aside>
+    </form>
+
+    <section class="policy-box" id="policy">
+      <h2>Cancellation policy</h2>
+      <ul class="policy-list">
+        <li><strong>Booking fee.</strong> A non-refundable fee is charged to confirm your appointment request. It goes toward your appointment and final price.</li>
+        <li><strong>Arrival window.</strong> We keep a 1 to 2 hour window between appointments for emergencies or delays. Please plan your day around your appointment.</li>
+        <li><strong>Rescheduling.</strong> You must reschedule within 48 hours of your appointment.</li>
+        <li><strong>No-shows.</strong> Premier Auto Detailing will not take clients who no-call or no-show.</li>
+      </ul>
+    </section>
+  </div>
+</main>
+<div class="mobile-total" aria-hidden="true"><div><small>Starting at</small><strong data-mobile-total>$0</strong></div><a class="btn" href="#summary">Review &amp; book</a></div>
+<script src="assets/js/pricing.js"></script>
+<script src="assets/js/book.js"></script>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="assets/img/logo.png" alt="Premier Auto Detailing" width="222" height="184" loading="lazy">
+      <p>Mobile detailing and certified 9H ceramic coating for the Reno and Tahoe area. Owner-operated by Jovani Corona. Licensed and insured.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/nvpremierdetail" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/nvpremierdetail" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v6h4v-6h3l.5-4h-3.5V8.8c0-.5.3-.8.5-.8z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="services.html">Services &amp; pricing</a></li>
+        <li><a href="ceramic-coating.html">Ceramic coating</a></li>
+        <li><a href="studio.html">3D Studio &amp; preview</a></li>
+        <li><a href="book.html">Book an appointment</a></li>
+        <li><a href="contact.html">Ask for a quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul>
+        <li>Monday to Sunday</li>
+        <li>8:00 am to 7:00 pm</li>
+        <li><a href="tel:+17754208547">(775) 420-8547</a></li>
+        <li><a href="book.html#policy">Cancellation policy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>We come to</h4>
+      <ul>
+        <li>Reno</li><li>Sparks</li><li>Incline Village</li><li>Stateline</li><li>Tahoe City</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <span>&copy; <span data-year>2026</span> Premier Auto Detailing. Reno, Nevada.</span>
+    <span>@nvpremierdetail</span>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
